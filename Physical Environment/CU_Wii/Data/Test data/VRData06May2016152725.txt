@@ -1,0 +1,2 @@
+	 time, 	 trialNum, 	 trialTime, 	 Weightshift success, 	 button success, 	 random or set sequence 	 X coord of target 	 Y coord of target
+

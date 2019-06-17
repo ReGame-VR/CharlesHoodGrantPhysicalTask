@@ -1,0 +1,22 @@
+			Calibration results:
+
+	 zeroX 	 zeroY 	 XMaxWeight 	 XMinWeight 	 YMaxWeight 	 YMinWeight
+	 0.00 	 0.00 	 12.00 	 -12.00 	 8.00 	 -8.00 
+
+
+	 centerAx 	 centerAy 	 centerBx 	 centerBy 	 centerCx 	 centerCy 	 centerDx 	 centerDy 	 centerEx 	 centerEy 	 centerFx 	 centerFy
+	 -6.00 	 5.00 	 9.00 	 5.00 	 -9.00 	 0.00 	 5.00 	 0.00 	 -3.00 	 -5.00 	 7.00 	 -5.00 
+
+
+	 trialNum 	 date 	 time 	 targetlNum 	 targetTime 	 Weightshift success 	 button success 	 random or set sequence 	 X coord of target 	 Y coord of target 	 COPtotalpath 	 ScorePerTarget 	 ScorePerTrial 	 CumulativeScore 
+
+	 1 	 August 10, 2016 	 12:44:50.707 PM 	 4 	 5.82 	 1 	 1 	 0 	 10.36 	 5.11 	 99.44 	 5 	 5 	 5 
+	 1 	 August 10, 2016 	 12:44:53.382 PM 	 1 	 2.56 	 1 	 1 	 0 	 -2.75 	 -7.71 	 20.23 	 8 	 13 	 13 
+	 1 	 August 10, 2016 	 12:44:55.712 PM 	 3 	 2.29 	 1 	 1 	 0 	 -5.21 	 4.92 	 20.29 	 8 	 21 	 21 
+	 1 	 August 10, 2016 	 12:44:59.202 PM 	 5 	 3.46 	 1 	 1 	 0 	 6.86 	 0.24 	 30.08 	 7 	 28 	 28 
+	 1 	 August 10, 2016 	 12:45:01.851 PM 	 2 	 2.62 	 1 	 1 	 0 	 -7.76 	 -0.29 	 18.17 	 8 	 36 	 36 
+	 2 	 August 10, 2016 	 12:45:11.924 PM 	 4 	 6.19 	 1 	 1 	 0 	 9.18 	 5.33 	 139.68 	 4 	 4 	 40 
+	 2 	 August 10, 2016 	 12:45:14.100 PM 	 1 	 2.15 	 1 	 1 	 0 	 -2.58 	 -3.34 	 19.26 	 8 	 12 	 48 
+	 2 	 August 10, 2016 	 12:45:18.483 PM 	 3 	 4.35 	 1 	 1 	 0 	 -3.69 	 4.79 	 25.23 	 6 	 18 	 54 
+	 2 	 August 10, 2016 	 12:45:22.408 PM 	 5 	 3.90 	 1 	 1 	 0 	 3.26 	 -0.60 	 19.96 	 7 	 25 	 61 
+	 2 	 August 10, 2016 	 12:45:25.608 PM 	 2 	 3.17 	 1 	 1 	 0 	 -9.37 	 1.27 	 20.35 	 7 	 32 	 68 

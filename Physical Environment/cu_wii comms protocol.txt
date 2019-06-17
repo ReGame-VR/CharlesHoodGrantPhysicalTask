@@ -1,0 +1,79 @@
+Communications protocol
+=======================
+
+Overview
+--------
+
+The system consists of 3 separate applications, the main MATLAB application,
+a master arduino application, and a slave arduino application running on
+each of the six touchscreen arduinos.
+There is no any button, and button means the user touched
+
+MATLAB App
+----------
+The MATLAB application is the main driver for the entire system. It communicates
+with the WiiFit balance board over Bluetooth. The WiiFit communications protocol
+is handled by the WiiLAB MATLAB library which provides a high-level interface
+for communicating with the WiiFit system. WiiLAB documentation and examples are
+available at http://netscale.cse.nd.edu/twiki/bin/view/Edu/WiiMote
+
+The MATLAB application communicates with the master arduino over a serial
+connection at 19200 baud.
+
+Arduino Master App
+------------------
+The arduino master application acts as a message broker between MATLAB and the 6
+touchscreen arduinos. The application listens on the main serial port for a
+message from matlab indicating the number of the selected screen, and the
+command (activate/yellow/red). The application then sends the command to the
+selected touchscreen using an xbee radio connected to a second serial port on
+the arduino, running at 9600 baud. The application listens for updates from the
+touchscreen arudinos, and sends information about touch events back to MATLAB
+
+Arduino Touchscreen App
+-----------------------
+The arudino touchscreen application is responsible for controlling the attached
+touchscreen. It listens for a command over the main serial port, which is
+connected to an xbee radio that allows it to communicate with the master
+arduino wirelessly. When a touch occurs it should send info about the touch
+position and time back to the arduino master, which will forward it to matlab
+
+
+MATLAB <-> Arduino master protocol
+----------------------------------
+
+MATLAB comand messges to the master arudino are formatted as 4-digit numbers.
+the first digit is the touchscreen number that the command is intended for (1-6)
+the next 3 digits are command flags which are set to either 1 or 0. The first
+flag digit is for the "green" state, the next is for "red" and the last is
+"yellow".
+
+examples:
+    the command to set touchscreen 4 to red would be "4010"
+    the command to set touchscreen 5 to green would be "5100"
+
+The message "333" is used to indicate the end of transmission.
+
+when a button is pressed, the arduino will respond with a message formatted as a
+6-digit number followed by a carriage reurn and linefeed ("\r\n"). Each digit
+indicates the "pressed" state of one of the touchscreens as either a 1 (pressed)
+or 0 (not pressed). The first digit corresponds to the first touchscreen, the
+second digit is the second touchscreen, etc.
+
+
+Arduino Master <-> Touchscreen arduino protocol
+-----------------------------------------------
+
+The master arduino sends command messages to the touchscreen arduinos formatted
+as two-digit strings followed by a carriage return and linefeed. The first digit
+is the touchscreen number that the command is addressed to and the second digit
+is the commanded state, which is one of the following values: 0 (green),
+1 (yellow), or 2 (red)
+
+note: It's not clear from the existing code what the response should be when 
+      touchscreen is pressed. The current arduino master code looks for a single
+      digit containing the number of the touchscreen that was pressed. as
+      currently configured, the position/accuracy information has no way of
+      getting back to matlab, only an indication that a touchscreen was pressed.
+      I've attached some suggestions that cover this
+

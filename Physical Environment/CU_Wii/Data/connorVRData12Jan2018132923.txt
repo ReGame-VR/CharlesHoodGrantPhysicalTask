@@ -1,0 +1,23 @@
+			Calibration results:
+
+	 zeroX 	 zeroY 	 XMaxWeight 	 XMinWeight 	 YMaxWeight 	 YMinWeight
+	 0.00 	 0.00 	 14.00 	 -14.00 	 10.00 	 -10.00 
+
+
+	 centerAx 	 centerAy 	 centerBx 	 centerBy 	 centerCx 	 centerCy 	 centerDx 	 centerDy 	 centerEx 	 centerEy 	 centerFx 	 centerFy
+	 -7.00 	 7.00 	 11.00 	 7.00 	 -11.00 	 0.00 	 5.00 	 0.00 	 -3.00 	 -7.00 	 9.00 	 -7.00 
+
+
+	 trialNum 	 date 	 time 	 targetlNum 	 targetTime 	 Weightshift success 	 button success 	 random or set sequence 	 X coord of target 	 Y coord of target 	 COPtotalpath 	 ScorePerTarget 	 ScorePerTrial 	 CumulativeScore 
+
+	 1 	 January 12, 2018 	  1:29:35.356 PM 	 1 	 10.00 	 0 	 0 	 1 	 -14.41 	 -11.20 	 208.42 	 0 	 0 	 0 
+	 1 	 January 12, 2018 	  1:29:45.409 PM 	 1 	 10.00 	 0 	 0 	 1 	 -14.10 	 -10.60 	 196.00 	 0 	 0 	 0 
+	 1 	 January 12, 2018 	  1:29:55.449 PM 	 1 	 10.00 	 0 	 0 	 1 	 -14.86 	 -10.88 	 213.34 	 0 	 0 	 0 
+	 1 	 January 12, 2018 	  1:30:05.494 PM 	 1 	 10.00 	 0 	 0 	 1 	 -15.81 	 -11.57 	 212.87 	 0 	 0 	 0 
+	 1 	 January 12, 2018 	  1:30:15.542 PM 	 1 	 10.00 	 0 	 0 	 1 	 -15.36 	 -11.26 	 203.12 	 0 	 0 	 0 
+	 2 	 January 12, 2018 	  1:31:35.015 PM 	 1 	 10.00 	 0 	 0 	 1 	 -16.08 	 -11.73 	 206.99 	 0 	 0 	 0 
+	 2 	 January 12, 2018 	  1:31:45.064 PM 	 1 	 10.00 	 0 	 0 	 1 	 -14.40 	 -10.25 	 206.23 	 0 	 0 	 0 
+	 2 	 January 12, 2018 	  1:31:55.114 PM 	 1 	 10.00 	 0 	 0 	 1 	 -14.98 	 -10.77 	 215.38 	 0 	 0 	 0 
+	 2 	 January 12, 2018 	  1:32:05.181 PM 	 1 	 10.00 	 0 	 0 	 1 	 -14.64 	 -10.82 	 201.76 	 0 	 0 	 0 
+	 2 	 January 12, 2018 	  1:32:15.204 PM 	 1 	 10.00 	 0 	 0 	 1 	 -14.85 	 -11.12 	 213.46 	 0 	 0 	 0 
+	 3 	 January 12, 2018 	  1:32:29.600 PM 	 1 	 10.00 	 0 	 0 	 0 	 -0.23 	 7.78 	 144.76 	 0 	 0 	 0 

@@ -1,0 +1,14 @@
+			Calibration results:
+
+	 zeroX 	 zeroY 	 XMaxWeight 	 XMinWeight 	 YMaxWeight 	 YMinWeight
+	 0.00 	 0.00 	 14.00 	 -14.00 	 10.00 	 -10.00 
+
+
+	 centerAx 	 centerAy 	 centerBx 	 centerBy 	 centerCx 	 centerCy 	 centerDx 	 centerDy 	 centerEx 	 centerEy 	 centerFx 	 centerFy
+	 -1.00 	 7.00 	 11.00 	 7.00 	 -11.00 	 -2.00 	 -1.00 	 3.00 	 -3.00 	 -7.00 	 9.00 	 -7.00 
+
+
+	 trialNum 	 date 	 time 	 targetlNum 	 targetTime 	 Weightshift success 	 button success 	 random or set sequence 	 X coord of target 	 Y coord of target 	 COPtotalpath 	 ScorePerTarget 	 ScorePerTrial 	 CumulativeScore 	 SecondsInRed 	 SecondsInYellow 	 SecondsInGreen
+
+	 5 	 30-Mar-2019 	 0.000000 	 1 	 10.000000 	 1 	 0 	 0 	 -3.000000 	 -7.000000 	 0.073918 	 15.820000 	 15.820000 	 15.820000 	 0.000000 	 2.462369 	 1.343110
+	 5 	 30-Mar-2019 	 0.000000 	 2 	 10.000000 	 1 	 0 	 0 	 -11.000000 	 -2.000000 	 0.064032 	 8.730000 	 8.730000 	 24.550000 	 2.449979 	 5.172179 	 2.654144

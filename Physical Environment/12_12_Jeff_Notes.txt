@@ -1,0 +1,56 @@
+EMAIL: eszlarij@gmail.com
+
+mesh network w/ repeater
+
+end device: 
+C
+AA
+MAC 1   0013A200
+MAC 2   417FC49A
+1
+
+coordinator:
+C       HP
+AA      ID
+0       DH
+FFFF    DL
+0
+
+-Duck Antennas: worked, but didn't improve distance
+
+-Pros: worked, but significant delay (failed at 12,13 secs)
+
+49A IS THE COORDINATOR
+	
+ASCII acknowledge character
+
+get acknowledgement before moving on
+
+160 bits per message
+
+9600 bits per second
+
+try 50 ms delay, repeated 5 times
+
+either send until matlab says it has received 
+or add check to matlab for target # at beginning 
+
+check digi if there is pre-programmed settings for ack
+
+xctu: check differences in settings (addressing) between
+series 1 and pro
+
+make timeout longer in matlab, maybe arduino
+
+CODE STUFF FOR TRANSMITTING ASCII ACK/NAK:
+int thisByte = 33;
+Serial.write(thisByte);
+
+String incoming;
+if(Serial.available()>0){
+incoming = Serial.read();
+String mysrr = String(incoming);
+Serial.println(mysrr);
+
+look into whether the micro usb converter (Serial1) could be a source
+of dropped signal

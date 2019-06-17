@@ -1,0 +1,7 @@
+andrew@ferencz.com
+
+-send pictures, datasheets
+-zigbee (802.15.4)
+
+
+these are zigbee...

@@ -1,0 +1,17 @@
+			Calibration results:
+
+	 zeroX 	 zeroY 	 XMaxWeight 	 XMinWeight 	 YMaxWeight 	 YMinWeight
+	 -4.81 	 2.23 	 9.41 	 -13.44 	 9.49 	 -7.71 
+
+
+	 centerAx 	 centerAy 	 centerBx 	 centerBy 	 centerCx 	 centerCy 	 centerDx 	 centerDy 	 centerEx 	 centerEy 	 centerFx 	 centerFy
+	 -6.72 	 6.99 	 6.91 	 6.99 	 -10.94 	 0.00 	 4.50 	 0.00 	 -2.50 	 -5.21 	 4.91 	 -5.21 
+
+
+	 trialNum 	 time 	 targetlNum 	 targetTime 	 Weightshift success 	 button success 	 random or set sequence 	 X coord of target 	 Y coord of target 	 COPtotalpath 	 ScorePerTarget 	 ScorePerTrial 	 CumulativeScore 
+
+	 1 	 77.58 	 4 	 10.00 	 1 	 0 	 0 	 4.03 	 4.61 	 108.97 	 0 	 0 	 0 
+	 1 	 92.69 	 1 	 10.00 	 0 	 0 	 0 	 -11.54 	 -1.99 	 101.79 	 0 	 0 	 0 
+	 1 	 106.45 	 3 	 10.00 	 0 	 0 	 0 	 29.67 	 -0.86 	 511.06 	 0 	 0 	 0 
+	 1 	 119.70 	 5 	 10.00 	 0 	 0 	 0 	 30.10 	 -0.41 	 315.25 	 0 	 0 	 0 
+	 1 	 133.97 	 2 	 10.00 	 0 	 0 	 0 	 27.34 	 -0.84 	 247.53 	 0 	 0 	 0 

@@ -1,0 +1,56 @@
+PHYSICAL ENVIRONMENT CURRENT STATUS (3/15/19)
+
+
+SOUND:
+-there was a 'delete(instrfindall)' that was removing the sound player object
+-moved this to the beginning of the code
+-sound should work now as long as sound files are correctly placed
+
+HK - Changed comparisons @Line 864 and 870 from string type 
+"if (value == '1')" to numeric  "if (value == 1)" to match received 
+data. sounds playing now
+
+
+SAVING:
+-code for setting up the cop data and saving it is set
+-code for setting up the excel file for the trial is set up
+-need to manipulate data collected and send to excel file in correct format
+-need to add code that will append the excel file(s) after trials
+
+
+SCORE DISPLAY:
+-need to change gui code so that the new data is added instead of zero value
+-the variables being displayed are 'trial_score' and 'cum_score'
+-the figure for the scores is called 'scorefig'
+-tried adding code (line 877 or so) but haven't tested yet
+-need to set up the code so that trial_score and cum_score are taking in the new values
+from 'score'
+-Need to figure out how to make the score gui pop up before the task starts so that
+it can be dragged onto the monitor for feedback. Currently the score gui pops up as 
+the task start dialogue opens, so you can't drag the gui over to the secondary monitor
+before the task is already running.
+
+
+GREEN/YELLOW TIME:
+-need to add loops for each color that will:
+-check what color zone the COP is in
+-when the COP enters the zone, start timing
+-when the COP leaves the zone, end timing
+-add up all the time differences to find total time in the green/yellow zone
+
+HK - Added ticks_in_{green,yellow,red} variables, and increment them in each 
+     loop based on COG position, i.e. if cog is in red area, increment ticks_in_red,
+     if its in yellow, increment ticks_in_yellow, etc.
+
+     Since each loop iteration is 'cycletime' seconds, the ticks_in_$COLOR counters 
+     can be converted back to time just by multiplying by 'cycletime'.
+
+     did some testing, cycletime not accurate but this works:
+     
+     time_in_green = ticks_in_green * (t_el / (ticks_in_green + ticks_in_yellow + ticks_in_red))
+     added at Line 891
+
+SCREENS FREEZING:
+-still having issue with screens getting stuck
+-attempts at adding error correction seem to have not made a difference
+

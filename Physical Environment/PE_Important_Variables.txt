@@ -1,0 +1,32 @@
+PHYSICAL ENVIRONMENT: IMPORTANT VARIABLES
+
+-if you need to change the values, Ctrl + f to search for them is the easiest access
+
+
+VRdata : file used for storing data/scores from the session
+
+CoPdata : file used for storing COP readings over time
+
+dim : width of the green target square (on BB)
+
+Atar : defines the dimensions for target A
+Btar : ...
+...
+
+targets : defines the order of the targets in an array
+
+setSeq : sets the order of the targets for when the 'set sequence' is picked
+
+trialNum : number of trials to be completed in a row during the session
+
+[y,correct] : use to identify the file name of the correct sound
+
+[t,wrong] : use to identify the file name of the wrong sound
+
+comPort: sets the serial com port that the xbee adapter is connected to
+
+s : creates serial connection, identifies baud rate
+
+decide: used for picking the type of sequencing 
+(0=set sequence, 1= random sequence, randi([0,1])= randomly chooses random or set sequence
+

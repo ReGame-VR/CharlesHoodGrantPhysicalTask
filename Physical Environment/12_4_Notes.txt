@@ -1,0 +1,18 @@
+12/4 NOTES
+
+-only the coordinator xbee will be discovered
+-other series 1 are not
+-new xbees are not
+
+-can discover other series 1 xbees by using
+the coordinator in API mode and scanning
+-tried changing other series 1 xbee to coordinator
+so it could be discovered, unsuccessful
+
+-tried to put new xbee on arduino and discover 
+through scanning, unsuccessful
+
+-tried changing serial port (COM9 to COM16), no 
+changes
+
+-tried updating XCTU, no changes 
